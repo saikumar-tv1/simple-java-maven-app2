@@ -38,8 +38,8 @@ jobs:
         run: |
           mvn clean install
 
-      - name: Publish Artifacts
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          mvn --batch-mode deploy
+      # - name: Publish Artifacts
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     mvn --batch-mode deploy
